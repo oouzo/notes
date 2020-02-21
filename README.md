@@ -1,7 +1,6 @@
 # notes
 mah...
 
-
 openssl ecparam -name secp384r1 -genkey -noout -out p384-key.pem -param_enc explicit
 openssl req -key p384-key-rogue.pem -new -out ca-rogue.pem -x509 -set_serial 0x5c8b99c55a94c5d27156decd8980cc26
 openssl ecparam -name prime256v1 -genkey -noout -out prime256v1-privkey.pem
